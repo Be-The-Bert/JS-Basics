@@ -6,9 +6,11 @@ var name = 'Tyler';
 
   //Code Here
 function isTyler(name) {
-  let answer;
-  name === 'Tyler' ? answer = true : answer = false;
-  return answer
+  if (name === 'Tyler') {
+    return true;
+  } else {
+    return false;
+  }
 }
 //////////////////PROBLEM 2////////////////////
 
@@ -19,7 +21,6 @@ function getName() {
 }
 
   //Code Here
-
 
 //////////////////PROBLEM 3////////////////////
 
@@ -76,7 +77,8 @@ function myName() {
   //Code Here
 let newMyName = myName;
 //Now alert the result of invoking newMyName
-alert(newMyName());
+
+// alert(newMyName());
 
 
 //////////////////PROBLEM 7////////////////////
@@ -86,7 +88,9 @@ alert(newMyName());
 //Create a function called outerFn which returns an anonymous function which returns your name.
   //Code Here
 function outerFn() {
-  return () => 'Beth'
+  return function() {
+    return 'Beth'
+  }
 }
 //Now save the result of invoking outerFn into a variable called innerFn.
   //Code Here
